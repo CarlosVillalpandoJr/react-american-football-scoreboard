@@ -2,6 +2,8 @@
 import React, { useState } from "react"; 
 import "./App.css";
 import BottomRow from "./BottomRow";
+import HomeButtons from "./components/HomeButtons"
+import AwayButtons from "./components/AwayButtons";
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
@@ -12,7 +14,10 @@ function App() {
   const addAwayTouchdown = () => setAwayScore(awayScore + 7);
 
   const addHomeFieldGoal = () => setHomeScore(homeScore + 3);
-  const addAwayFieldGoad = () => setAwayScore(awayScore + 3);
+  const addAwayFieldGoal = () => setAwayScore(awayScore + 3);
+
+  const resetHome = () => setHomeScore(0)
+  const resetAway = () => setAwayScore(0)
 
 
   return (
@@ -35,17 +40,16 @@ function App() {
         <BottomRow />
       </section>
       <section className="buttons">
-        <div className="homeButtons">
-          {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
-          <button className="homeButtons__touchdown" onClick={addHomeTouchdown}>Home Touchdown</button>
-          <button className="homeButtons__fieldGoal" onClick={addHomeFieldGoal}>Home Field Goal</button>
-          <button onClick={() => setHomeScore(0)}>Reset Home Score</button>
-        </div>
-        <div className="awayButtons">
-          <button className="awayButtons__touchdown" onClick={addAwayTouchdown}>Away Touchdown</button>
-          <button className="awayButtons__fieldGoal" onClick={addAwayFieldGoad}>Away Field Goal</button>
-          <button onClick={() => setAwayScore(0)}>Reset Away Score</button>
-        </div>
+        <HomeButtons 
+          addHomeTouchdown={addHomeTouchdown} 
+          addHomeFieldGoal={addHomeFieldGoal} 
+          resetHome={resetHome}  
+        />
+        <AwayButtons 
+          addAwayTouchdown={addAwayTouchdown} 
+          addAwayFieldGoal={addAwayFieldGoal} 
+          resetAway={resetAway}
+        />
       </section>
     </div>
   );
