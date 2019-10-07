@@ -16,13 +16,7 @@ function App() {
   const addHomeFieldGoal = () => setHomeScore(homeScore + 3);
   const addAwayFieldGoal = () => setAwayScore(awayScore + 3);
 
-  // const resetHome = () => setHomeScore(0)
-  // const resetAway = () => setAwayScore(0)
-
-  const resetScores = () => {
-    setHomeScore(0);
-    setAwayScore(0)
-  }
+  const resetScores = () => {setHomeScore(0); setAwayScore(0)}
 
 
   return (
@@ -53,7 +47,7 @@ function App() {
           addAwayTouchdown={addAwayTouchdown} 
           addAwayFieldGoal={addAwayFieldGoal} 
         />
-        <button onClick={resetScores}>Reset Scores</button>
+        <button className='resetButton' onClick={resetScores}>Reset Scores</button>
       </section>
     </div>
   );
