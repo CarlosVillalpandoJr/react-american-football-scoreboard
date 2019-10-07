@@ -33,7 +33,7 @@ Follow these steps for completing your project.
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [ ] Do your magic!
 
-## Minimum Viable Product
+## Minimum Viable Product - COMPLETE
 
 1. Hold each team's current score in a state value
 1. Render each team's current score that is in state to the DOM.
