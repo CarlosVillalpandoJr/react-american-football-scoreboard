@@ -109,12 +109,14 @@
 .buttons {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
   background-color: #0b5402;
   color: white;
   border-radius: 0.5rem;
   border: 4px solid #aaaaaa;
+  padding: 20px;
 }
 
 .homeButtons__touchdown,
