@@ -14,7 +14,7 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 In this project, you build an app that diplays a scoreboard for an american football game. There will be two buttons for each team - one will increment that team's score by three points (for a "field goal") and the other will increment that team's score by seven points (for a "touchdown" and "extra point"). The css is already done for you. You should focus your efforts on the functionality of the app.
 
-## Project Set Up
+## Project Set Up - COMPLETE
 
 - [ ] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
@@ -33,7 +33,7 @@ Follow these steps for completing your project.
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
 - [ ] Do your magic!
 
-## Minimum Viable Product
+## Minimum Viable Product - COMPLETE
 
 1. Hold each team's current score in a state value
 1. Render each team's current score that is in state to the DOM.
